@@ -4,10 +4,10 @@ from zipfile import *
 
 # Директория которая будет преобразована в архив (также можно указать сам файл)
 # "\\" для имён с пробелами e.g - " "
-source = ['H:\PyCharm\Projects\Workspace']
+source = [' ']
 
 # Директория, в которой будет создан архив
-target_dir = 'H:\PyCharm\Projects\Workspace\Backup'
+target_dir = ' '
 
 # Дата создания архива
 today = target_dir + os.sep + time.strftime("%Y-%m-%d")
