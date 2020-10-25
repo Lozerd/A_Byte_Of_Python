@@ -7,6 +7,3 @@ while True:
         print('Your sentence is too small')
         continue
     print('Your sentence has right length')
-
-
-sys.exit()

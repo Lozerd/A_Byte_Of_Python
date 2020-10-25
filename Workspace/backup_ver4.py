@@ -4,10 +4,11 @@ from zipfile import *
 
 # Директория которая будет преобразована в архив (также можно указать сам файл)
 # "\\" для имён с пробелами e.g - " "
-source = [' ']
+# меняешь имена папок, меняй и тут. Вылезает ошибка в виде не найденой папки. :-(
+source = ['H:\_PyCharm\Projects\Workspace']
 
 # Директория, в которой будет создан архив
-target_dir = ' '
+target_dir = 'H:\_PyCharm\Projects\Workspace\Backup'
 
 # Дата создания архива
 today = target_dir + os.sep + time.strftime("%Y-%m-%d")
@@ -35,7 +36,7 @@ if not os.path.exists(today):
 # перед проверкой состояния (не принципиально)
 zip_command = "zip -r {0} {1}".format(target, ' '.join(source))
 
-print(zip_command)
+#print(zip_command)
 
 # Вывод в консоль состояния выполнения архивации
 if os.system(zip_command) == 0:
