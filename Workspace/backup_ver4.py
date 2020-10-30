@@ -8,7 +8,11 @@ from zipfile import *
 source = ['H:\_PyCharm\Projects\Workspace']
 
 # Директория, в которой будет создан архив
+<<<<<<< HEAD
 target_dir = 'H:\_PyCharm\Projects\Backup'
+=======
+target_dir = 'H:\_PyCharm\Projects\Workspace\Backup'
+>>>>>>> 58234a5e5b6c4f344b59ea1e73f9d196bde5f7fe
 
 # Дата создания архива
 today = target_dir + os.sep + time.strftime("%Y-%m-%d")
